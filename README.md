@@ -1,10 +1,8 @@
 # Hybrid Loss-Driven Framework for Automated Parotid Segmentation in Head and Neck CT
 
-[https://img.shields.io/badge/License-MIT-yellow.svg](https://img.shields.io/badge/License-MIT-yellow.svg)
-
-[https://img.shields.io/badge/Python-3.8%2B-blue](https://img.shields.io/badge/Python-3.8%2B-blue)
-
-[https://img.shields.io/badge/TensorFlow-2.10%2B-orange](https://img.shields.io/badge/TensorFlow-2.10%2B-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.10%2B-orange)
 
 This repository implements a deep learning framework for automatic parotid gland segmentation in head and neck CT scans using 3D U-Net architectures with a novel hybrid loss function. The approach addresses class imbalance and boundary inaccuracy challenges in medical image segmentation.
 
