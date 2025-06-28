@@ -149,11 +149,38 @@ Models are saved when **both** conditions are met:
 
 ### Performance Summary
 
-| Model            | Loss   | Left Parotid DSC (Median)  | Right Parotid DSC (Median)  | Mean IoU |
-|------------------|--------|----------------------------|-----------------------------|----------|
-| 3D U-Net         | Hybrid | 0.8835                     | 0.8709                      | 0.7515   |
-| Attention U-Net  | Hybrid | 0.8724                     | 0.8692                      | 0.7515   |
-| 3D U-Net         | CCE    | 0.8657                     | 0.8573                      | 0.7321   |
+1.  U-Net model
+| Organ          | Metric        | Model A    | Model B    | A - B       |
+|----------------|---------------|------------|------------|-------------|
+| Parotid Left   | Dice Mean     | 0.854631   | 0.865762   | -0.011132   |
+| Parotid Left   | Dice Std      | 0.059425   | 0.066597   | -0.007172   |
+| Parotid Left   | Dice Median   | 0.868868   | 0.883497   | -0.014628   |
+| Parotid Left   | IoU Mean      | 0.750658   | 0.768616   | -0.017958   |
+| Parotid Left   | IoU Std       | 0.086854   | 0.091319   | -0.004465   |
+| Parotid Left   | IoU Median    | 0.768141   | 0.791307   | -0.023166   |
+| Parotid Right  | Dice Mean     | 0.844395   | 0.848335   | -0.003939   |
+| Parotid Right  | Dice Std      | 0.097649   | 0.102393   | -0.004744   |
+| Parotid Right  | Dice Median   | 0.858146   | 0.870922   | -0.012776   |
+| Parotid Right  | IoU Mean      | 0.739939   | 0.746702   | -0.006763   |
+| Parotid Right  | IoU Std       | 0.111581   | 0.116147   | -0.004565   |
+| Parotid Right  | IoU Median    | 0.751538   | 0.771361   | -0.019823   |
+
+2.  U-Net + Attention
+
+| Organ          | Metric        | Model A    | Model B    | A - B       |
+|----------------|---------------|------------|------------|-------------|
+| Parotid Left   | Dice Mean     | 0.848844   | 0.861770   | -0.012926   |
+| Parotid Left   | Dice Std      | 0.075513   | 0.057465   | 0.018048    |
+| Parotid Left   | Dice Median   | 0.865655   | 0.872407   | -0.006752   |
+| Parotid Left   | IoU Mean      | 0.743894   | 0.761270   | -0.017376   |
+| Parotid Left   | IoU Std       | 0.100083   | 0.082593   | 0.017489    |
+| Parotid Left   | IoU Median    | 0.763136   | 0.773694   | -0.010558   |
+| Parotid Right  | Dice Mean     | 0.836777   | 0.842324   | -0.005547   |
+| Parotid Right  | Dice Std      | 0.099615   | 0.112922   | -0.013307   |
+| Parotid Right  | Dice Median   | 0.857330   | 0.869218   | -0.011888   |
+| Parotid Right  | IoU Mean      | 0.728953   | 0.739847   | -0.010895   |
+| Parotid Right  | IoU Std       | 0.114149   | 0.128088   | -0.013939   |
+| Parotid Right  | IoU Median    | 0.750287   | 0.768689   | -0.018402   |
 
 
 📦 Pretrained Models
