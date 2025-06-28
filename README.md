@@ -25,7 +25,7 @@ This repository implements a deep learning framework for automatic parotid gland
         
     *   Volumetric CT processing
         
-*   **Comprehensive Metrics**: DSC, IoU, Precision, Recall, Bland-Altman analysis
+*   **Comprehensive Metrics**: DSC, IoU, Bland-Altman analysis
     
 
 ⚙️ Installation
