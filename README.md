@@ -5,6 +5,7 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.10%2B-orange)
 
 This repository implements a deep learning framework for automatic parotid gland segmentation in head and neck CT scans using 3D U-Net architectures with a novel hybrid loss function. The approach addresses class imbalance and boundary inaccuracy challenges in medical image segmentation.
+Link - https://journals.lww.com/jomp/fulltext/2025/07000/a_combined_loss_driven_framework_for_automated.13.aspx
 
 🔑 Key Features
 ---------------
